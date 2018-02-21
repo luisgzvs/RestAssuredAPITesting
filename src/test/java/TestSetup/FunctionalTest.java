@@ -1,4 +1,6 @@
-import com.jayway.restassured.RestAssured;
+package TestSetup;
+
+import io.restassured.RestAssured;
 import org.junit.BeforeClass;
 
 public class FunctionalTest {
@@ -10,7 +12,6 @@ public class FunctionalTest {
         } else {
             RestAssured.port = Integer.valueOf(port);
         }
-
 
         String basePath = System.getProperty("server.base");
         if (basePath == null) {

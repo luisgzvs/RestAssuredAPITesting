@@ -14,7 +14,7 @@ public class UserRestGetTest extends SetupTest {
 
     @Test
     public void invalidUserId() {
-        given().when().get("/user/100")
+        given().when().get("/user/999")
                 .then().statusCode(404);
     }
 

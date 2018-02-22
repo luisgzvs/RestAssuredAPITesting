@@ -2,8 +2,9 @@ package TestSetup;
 
 import io.restassured.RestAssured;
 import org.junit.BeforeClass;
+import org.junit.Test;
 
-public class FunctionalTest {
+public class SetupTest {
 
     @BeforeClass
     public static void setup() {
@@ -16,7 +17,7 @@ public class FunctionalTest {
 
         String basePath = System.getProperty("server.base");
         if (basePath == null) {
-            basePath = "/user/";
+            basePath = "/";
         }
         RestAssured.basePath = basePath;
 
@@ -26,4 +27,10 @@ public class FunctionalTest {
         }
         RestAssured.baseURI = baseHost;
     }
+
+    @Test
+    public void confirmation() {
+        System.out.print("Setup completed");
+    }
+
 }

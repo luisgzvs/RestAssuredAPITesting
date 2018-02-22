@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="TestNgMavenExampleSuite" parallel="false">
-    <test name="ApiTesting">
-        <classes>
-            <class name="ApiTest.UserRestTest"/>
-        </classes>
-    </test>
-</suite>

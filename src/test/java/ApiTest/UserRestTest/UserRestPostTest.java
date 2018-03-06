@@ -2,8 +2,7 @@ package ApiTest.UserRestTest;
 
 import ApiTest.Base.BaseRestTestMethods;
 import Entities.User;
-import org.junit.Test;
-
+import org.testng.annotations.*;
 import static io.restassured.RestAssured.given;
 
 public class UserRestPostTest extends BaseRestTestMethods {

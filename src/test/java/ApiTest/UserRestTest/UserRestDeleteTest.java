@@ -1,7 +1,7 @@
 package ApiTest.UserRestTest;
 
 import ApiTest.Base.BaseRestTestMethods;
-import org.junit.Test;
+import org.testng.annotations.*;
 import static io.restassured.RestAssured.given;
 
 public class UserRestDeleteTest extends BaseRestTestMethods {

@@ -1,12 +1,11 @@
 package TestSetup;
 
 import io.restassured.RestAssured;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.testng.annotations.*;
 
 public class SetupTest {
 
-    @BeforeClass
+    @BeforeTest
     public static void setup() {
         String port = System.getProperty("server.port");
         if (port == null) {

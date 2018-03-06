@@ -1,4 +1,4 @@
-package TestSetup;
+/*package TestSetup;
 
 import ApiTest.UserRestTest.UserRestDeleteTest;
 import ApiTest.UserRestTest.UserRestGetTest;
@@ -17,3 +17,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 public class RunTestSuite {
 }
+
+This is for Junit usage
+
+*/

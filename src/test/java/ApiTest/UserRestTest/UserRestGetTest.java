@@ -1,7 +1,7 @@
 package ApiTest.UserRestTest;
 
 import TestSetup.SetupTest;
-import org.junit.*;
+import org.testng.annotations.*;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.*;
 
@@ -26,13 +26,13 @@ public class UserRestGetTest extends SetupTest {
 
     @Test
     public void verifyNameStructured() {
-        given().when().get("/user").then()
-                .body("name",equalTo("Luis"));
+        given().when().get("/user/9").then()
+                .body("name",equalTo("Adela"));
     }
 
     @Test
     public void verifyUsersNamesOfUsers() {
-        given().when().get("/user").then().
+        given().when().get("/user/99").then().
                 body("id",equalTo(99));
     }
 
